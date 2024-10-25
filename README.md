@@ -7,7 +7,11 @@ Acesse a pasta onde está o projeto
 
 cd (naveque até chegar a pasta do projeto)
 git init
+
 git add .
+
 git status
+
 git commit -m "Escreva aqui a alteração"
+
 git push origin main
