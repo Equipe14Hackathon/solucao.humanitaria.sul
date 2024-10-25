@@ -6,6 +6,7 @@ Abra uma linha de comando e siga o passo abaixo.
 Acesse a pasta onde está o projeto
 
 cd (naveque até chegar a pasta do projeto)
+
 git init
 
 git add .
