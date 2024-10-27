@@ -1,194 +1,226 @@
-body{
-    background-color: rgb(253, 212, 30);
-    color: rgb(255, 255, 255);
-    font-family: poppinsregular;
+body {
+    background-color: rgb(252, 249, 237);
+    color: rgb(19, 19, 19);
+    font-family: 'Poppins', sans-serif;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px;
+    
 }
 
-header{
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
-
-#logo img{
+#logo img {
     width: 120px;
     height: auto;
+    filter: none;
 }
 
-#title{
-    flex-direction: column;
-    line-height: 10px;
+
+/* Estilos para alinhar o menu horizontalmente */
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.li-cabecalho{
-    display: inline-block;
-    margin: 20px;
+.li-cabecalho {
+    margin-right: 25px;
+}
+
+.li-cabecalho a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+a {
+    color: rgb(0, 105, 62);
     text-decoration: none;
 }
 
-a{
-    color: rgb(0, 105, 62);
-}
-
-a:hover{
+a:hover {
     color: rgb(255, 255, 255);
-    transition: 0.3s all;
+    background-color: rgb(0, 105, 62);
+    transition: 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-#subscribe-btn{
+#subscribe-btn {
     border: 2px solid rgb(0, 105, 62);
     padding: 10px;
-    border-radius: 15px;
 }
 
-#subscribe-btn:hover{
-    background-color: rgb(0, 105, 62);
-    color: rgb(255, 255, 255);
+h1 {
+    font-weight: bold;
+    color: red;
+    font-size: 30px;
+    filter: drop-shadow(2px 2px 1px rgb(43, 43, 43));
 }
 
-h1{
-    font-weight: 200;
-}
-
-main{
+main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 50px;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
-h2{
-    font-size: 56px;
-    line-height: 10px;
-    font-family: poppinsmedium;
+.section-mapa {
+    
 }
 
-span{
+aside {
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
     color: rgb(206, 32, 41);
 }
 
-p{
-     line-height: 20px;
-     max-width: 500px;
-     font-family: poppinslight;
+p {
+    line-height: 1.5;
+    max-width: 500px;
 }
 
-img{
+img {
     display: block;
-    width: 500px;
+    width: 100%;
     height: auto;
     border-radius: 15px;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6));
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
 }
 
-form [type="submit"]{
-    height: 50px;
-    width: 50%;
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    margin-top: 10px; 
+    padding: 10px; 
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input[type="submit"], .send-btn {
+    height: 40px; 
     background-color: rgb(206, 32, 41);
     color: rgb(255, 255, 255);
     font-weight: bold;
-
-}
-
-form [type="submit"]:hover{
-    cursor: pointer;
-}
-
-input{
-    margin-top: 20px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 20px;
     border: none;
-    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px; 
+    width: 50%;
+    max-width: 200px;
+    align-self: center; 
+}
+
+input[type="submit"]:hover, .send-btn:hover {
+    background-color: rgb(255, 199, 199);
+    color: rgb(255, 0, 13);
 }
 
 
 
-
-/*SECTION 1*/
-#map {
-    height: 500px;
-    width: 100%;
-}
-
-
-
-
-
-
-/*VOLUNTÁRIO*/
 .section-voluntario {
-    width: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: inline;
-    height: 100%;
-    margin: 0;
     display: flex;
-    justify-content: center;
-}
-
-.title-form-voluntario {
-    text-decoration: underline;
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-}
-
-.form-voluntario {
-    width: 250px;
-    height: 250px;
-    padding: 36px ;
-    background-color: rgba(202, 93, 93, 0.08);
-    border: solid 20px rgb(27, 62, 51);
-    align-items: center;
-    display: -webkit-inline-flex;
-    display: -ms-inline-grid;
-    border-radius: 30px;
-    overflow: scroll;
-    vertical-align: -webkit-baseline-middle;
-    padding-bottom: 3%;
     flex-direction: column;
-    list-style: decimal;
+    align-items: center;
+    max-width: 600px; 
+    margin: 0 auto;
 }
 
-.form-dados, .input-dados {
-    height: 30px;
-    width: 80%;
-    justify-content: space-between;
-    font-size: smaller;
-    border-radius: 2px;
-    margin-bottom: 8px;
+
+.form-dados {
+    width: 100%; 
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
-.input-texarea {
-    width: 194px;
-    height: 150px;
-    font-size: large;
-    box-sizing: border-box;
-    padding: 5px;
-    resize: none;
+.input-dados {
+    width: calc(100% - 20px); 
+    max-width: 400px;
+    margin: 10px 0; 
+    padding: 15px; 
+    border-radius: 20px; 
     border: 1px solid #ccc;
 }
 
-.send-btn:hover {
-    background: #4c8ab9;
-    color: #fff;
-    border: 1px solid #eee;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #eee;
-    text-shadow: none;
+.send-btn {
+    width: calc(100% - 20px);
+    max-width: 400px;
+    margin-top: 10px;
+    padding: 15px; 
+    border-radius: 20px; 
+    background-color: rgb(206, 32, 41);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none; 
+    cursor: pointer; 
 }
 
+.btn-color:hover {
+    color: aqua;
+}
+
+.send-btn:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(206, 32, 41);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 50px; 
+    padding: 20px 0;
+}
+
+.current-year {
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 0.9rem;
+    color: rgb(19, 19, 19); 
+}
+
+
+
+
+@media (min-width: 768px) {
+    main {
+        flex-direction: row; 
+    }
+    aside, article {
+        flex: 1;
+        margin: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    .send-btn {
+        width: 90%;
+    }
+}
