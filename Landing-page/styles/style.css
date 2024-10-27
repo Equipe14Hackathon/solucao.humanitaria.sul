@@ -14,6 +14,7 @@ header{
     align-items: center;
 }
 
+
 #logo img{
     width: 120px;
     height: auto;
@@ -24,9 +25,10 @@ header{
     line-height: 10px;
 }
 
-li{
+.li-cabecalho{
     display: inline-block;
     margin: 20px;
+    text-decoration: none;
 }
 
 a{
@@ -96,6 +98,7 @@ form [type="submit"]{
     background-color: rgb(206, 32, 41);
     color: rgb(255, 255, 255);
     font-weight: bold;
+
 }
 
 form [type="submit"]:hover{
@@ -110,3 +113,82 @@ input{
     border: none;
     font-size: 15px;
 }
+
+
+
+
+/*SECTION 1*/
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+
+
+
+
+
+/*VOLUNTÁRIO*/
+.section-voluntario {
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.title-form-voluntario {
+    text-decoration: underline;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.form-voluntario {
+    width: 250px;
+    height: 250px;
+    padding: 36px ;
+    background-color: rgba(202, 93, 93, 0.08);
+    border: solid 20px rgb(27, 62, 51);
+    align-items: center;
+    display: -webkit-inline-flex;
+    display: -ms-inline-grid;
+    border-radius: 30px;
+    overflow: scroll;
+    vertical-align: -webkit-baseline-middle;
+    padding-bottom: 3%;
+    flex-direction: column;
+    list-style: decimal;
+}
+
+.form-dados, .input-dados {
+    height: 30px;
+    width: 80%;
+    justify-content: space-between;
+    font-size: smaller;
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
+.input-texarea {
+    width: 194px;
+    height: 150px;
+    font-size: large;
+    box-sizing: border-box;
+    padding: 5px;
+    resize: none;
+    border: 1px solid #ccc;
+}
+
+.send-btn:hover {
+    background: #4c8ab9;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+

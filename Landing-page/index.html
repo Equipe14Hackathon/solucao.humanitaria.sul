@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/style.css" rel="stylesheet">
-    <link href="/styles/fonts.css" rel="stylesheet">
-    <link href="/styles/media.css" rel="stylesheet">
+    <link href="../Landing-page/styles/style.css" rel="stylesheet">
+    <link href="../Landing-page/styles/fonts.css" rel="stylesheet">
+    <link href="../Landing-page/styles/media.css" rel="stylesheet">
     <title>Proteja RS</title>
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -16,24 +18,34 @@
         </div>
 
         <ul>
-            <a href="#"><li>Inicio</li></a>
-            <a href="#"><li>Mapa de atuação</li></a>
-            <a href="#"><li>Sobre nós</li></a>
-            <a href="#" id="subscribe-btn"><li>Quero ser voluntário</li></a>
+            <a href="#inicio">
+                <li class="li-cabecalho">Inicio</li>
+            </a>
+            <a href="#mapa">
+                <li class="li-cabecalho">Mapa de atuação</li>
+            </a>
+            <a href="#sobre">
+                <li class="li-cabecalho">Sobre nós</li>
+            </a>
+            <a href="#voluntario" id="subscribe-btn">
+                <li class="li-cabecalho">Quero ser voluntário</li>
+            </a>
         </ul>
     </header>
 
     <main>
         <aside>
-            <h2><span>Necessita de Ajuda?</span></h2>
+            <h2 id="inicio"><span>Precisa de Ajuda?</span></h2>
             <h2></h2>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                Entre em contato conosco pelo formulário abaixo.
             </p>
-            <form >
+            <form>
                 <input type="text" placeholder="Nome">
                 <input type="email" placeholder="Telefone">
+                <input type="text" placeholder="Endereço">
                 <input type="submit" value="Enviar">
+                
             </form>
         </aside>
 
@@ -41,5 +53,83 @@
             <img src="./components/images/imagem-ana.webp" alt="img">
         </article>
     </main>
+
+    <br><br>
+    <section class="section-mapa" id="mapa">
+        <div class="container">
+            <main>
+                <aside>
+                    <h2 id="inicio"><span>Mapa de atuação</span></h2>
+                    <ul class="ul-list">
+                        <li class="red-points">
+                            <span>Ponto vermelho</span>
+                        </li> Os pontos vermelhos são de riscos, no entando, estamos priorizando e trabalhando para
+                        atender o máximo de pessoas que dessas regiões.
+                        </li>
+                        <li class="blue-points">
+                            <span style="color: blue;">Ponto azul</span>
+                        </li> Os pontos vermelhos são de riscos, no entando, estamos priorizando e trabalhando para
+                        atender o máximo de pessoas que dessas regiões.
+                        </li>
+                        <li class="yellow-points">
+                            <span style="color: rgb(255, 255, 0);">Ponto amarelo</span>
+                        </li>Os pontos vermelhos são de riscos, no entando, estamos priorizando e trabalhando para
+                        atender o máximo de pessoas que dessas regiões.
+                        </li>
+                    </ul>
+                    <!-- <p>
+                        Nosso mapa de atuação mostra claramente todas as áreas que foram afetadas. Também possuímos um localizador apresenta os principais pontos que necessitam de resgate imediato, áreas que estão sob riscos de alagamente, doações.
+                    </p> -->
+
+                </aside>
+                <article>
+                    <img src="components/images/mapa-rs.webp" alt="Mapa com pontos de alagamento no Rio Grande do Sul">
+                </article>
+            </main>
+        </div>
+    </section>
+
+    <br><br>
+    <section class="section-sobre" id="sobre">
+        <div class="container">
+            <main>
+                <aside>
+                    <h2 id="inicio"><span>Sobre Nós</span></h2>
+                    <p>
+                        Somos uma equipe multidisciplinar, cuso o nosso foco é equilibrar e manter a qualidade de vida
+                        de todos aqueles que precisam de apoio, e que esse apoio possa impactar positivamente na vida
+                        dos desabrigados, pessoas em situação de vulnerabilidade, refugiados, entre outros.
+                    </p>
+                </aside>
+                <article>
+                    <img src="./components/images/img-sobre-nos.jfif" alt="img">
+                </article>
+            </main>
+        </div>
+    </section>
+
+
+    <footer id="voluntario">
+
+        &copy;
+        <span class="current-year">2024 | Proteja RS | Todos os direitos reservados</span>
+
+        
+        <section class="section-voluntario">
+            <h3 class="title-form-voluntario">Preencha seus dados a baixo</h3>
+            <div class="form-voluntario">
+                <form class="form-dados">
+                    <input class="input-dados" type="text" placeholder="Seu nome"/>
+                    <input class="input-dados" type="text" placeholder="Sobrenome"/>
+                    <input class="input-dados" type="tel" placeholder="Telefone">
+                    <input class="input-dados" type="email" placeholder="E-mail">
+                    <button class="send-btn" type="submit" class="send-btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </footer>
+
 </body>
+
 </html>
