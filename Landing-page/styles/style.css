@@ -1,12 +1,22 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+/* Define configurações da cor de fundo */
 body {
     background-color: rgb(252, 249, 237);
     color: rgb(19, 19, 19);
     font-family: 'Poppins', sans-serif;
     max-width: 1200px;
     margin: 0 auto;
-    
+
+
 }
 
+/* Define configurações do cabeçalho */
 header {
     display: flex;
     align-items: center;
@@ -39,9 +49,6 @@ header {
 }
 
 
-
-
-
 a {
     color: rgb(0, 105, 62);
     text-decoration: none;
@@ -51,37 +58,85 @@ a:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(0, 105, 62);
     transition: 0.3s;
-    padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 20px;
+    padding: 4px;
 }
 
-#subscribe-btn {
+.subscribe-btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 105, 62);
+    transition: 0.3s;
+}
+
+.subscribe-btn {
+    background-color: rgb(252, 249, 237);
     border: 2px solid rgb(0, 105, 62);
     padding: 10px;
+    border-radius: 28em;
+}
+
+.ul-list li {
+    list-style: none;
+    margin-left: 20px;
+    text-align: start;
+    
+}
+
+.ul-list {
+    padding: 0;
+    display: flex;
+    padding: 3%;
+}
+
+.ponto-atuacao {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.bi {
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 2px;
 }
 
 h1 {
-    font-weight: bold;
     color: red;
     font-size: 30px;
-    filter: drop-shadow(2px 2px 1px rgb(43, 43, 43));
 }
 
-main {
+.section-img {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    padding: 0.5rem;
+    padding-inline: 5%;
+}
+
+
+#ajuda {
+     height: 500px;
+
+}
+
+main article img {
+    height: 500px;
 }
 
 .section-mapa {
-    
+    padding-top: 10%;
 }
+
+
 
 aside {
     margin: 20px 0;
 }
 
-h2 {
+.titulos {
     font-size: 2rem;
     font-weight: bold;
     color: rgb(206, 32, 41);
@@ -106,60 +161,72 @@ form {
     width: 100%;
 }
 
+
+
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    margin-top: 10px; 
-    padding: 10px; 
+    margin-top: 10px;
+    padding: 12px;
     border-radius: 20px;
     border: 1px solid #ccc;
     font-size: 14px;
 }
 
-input[type="submit"], .send-btn {
-    height: 40px; 
+
+
+input[type="submit"],
+.send-btn {
+    height: 40px;
     background-color: rgb(206, 32, 41);
     color: rgb(255, 255, 255);
     font-weight: bold;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    margin-top: 10px; 
+    margin-top: 10px;
     width: 50%;
     max-width: 200px;
-    align-self: center; 
+    align-self: center;
 }
 
-input[type="submit"]:hover, .send-btn:hover {
+
+input[type="submit"]:hover,
+.send-btn:hover {
     background-color: rgb(255, 199, 199);
     color: rgb(255, 0, 13);
+}
+
+.section-sobre {
+    padding-top: 10%;
 }
 
 
 
 .section-voluntario {
     display: flex;
+    padding-top: 5%;
     flex-direction: column;
     align-items: center;
-    max-width: 600px; 
+    max-width: 600px;
     margin: 0 auto;
 }
 
 
 .form-dados {
-    width: 100%; 
-    padding: 10px; 
+    width: 100%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .input-dados {
-    width: calc(100% - 20px); 
+    width: calc(100% - 20px);
     max-width: 400px;
-    margin: 10px 0; 
-    padding: 15px; 
-    border-radius: 20px; 
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 20px;
     border: 1px solid #ccc;
 }
 
@@ -167,13 +234,13 @@ input[type="submit"]:hover, .send-btn:hover {
     width: calc(100% - 20px);
     max-width: 400px;
     margin-top: 10px;
-    padding: 15px; 
-    border-radius: 20px; 
+    padding: 15px;
+    border-radius: 20px;
     background-color: rgb(206, 32, 41);
     color: rgb(255, 255, 255);
     font-weight: bold;
-    border: none; 
-    cursor: pointer; 
+    border: none;
+    cursor: pointer;
 }
 
 .btn-color:hover {
@@ -188,35 +255,45 @@ input[type="submit"]:hover, .send-btn:hover {
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    margin-top: 50px; 
+    align-items: center;
+    margin-top: 50px;
     padding: 20px 0;
 }
 
 .current-year {
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 20px;
     font-size: 0.9rem;
-    color: rgb(19, 19, 19); 
+    color: rgb(19, 19, 19);
 }
 
 
 
 
 @media (min-width: 768px) {
-    main {
-        flex-direction: row; 
+    .section-img {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
-    aside, article {
-        flex: 1;
-        margin: 20px; 
+
+    aside {
+        margin: 20px;
     }
 }
 
 @media (max-width: 768px) {
     header {
         flex-direction: column;
+        
     }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }  
+
     input[type="text"],
     input[type="email"],
     input[type="tel"],
